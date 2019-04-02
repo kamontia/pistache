@@ -35,6 +35,7 @@ namespace
         StreamCursor cursor(&buf);
 
         match_string("http://", std::strlen("http://"), cursor);
+        match_string("https://", std::strlen("https://"), cursor);
         match_string("www", std::strlen("www"), cursor);
         match_literal('.', cursor);
 
